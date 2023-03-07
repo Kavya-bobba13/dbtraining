@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe game Document</title>
+    <style>
+        
+        .cc{
+            display: inline-block;
+            position: relative;
+            top:40px;
+            left:100px;
+            
+        }
+        .cc1{
+            position: absolute;
+            top: 160px;
+            right: 260px;
+        }
+        .container{
+            display: inline-block;
+            width:180px;
+            height:160px;
+            margin: 0;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="cc"> 
+        
+            <h1>Tic-Tac-Toe Game</h1>
+            <button class="btn btn-info" onclick="location.reload()"> Reset </button> <br> <br>
+        <div class="container" id="b0" onclick="abc(id)">
+            
+        </div>
+        <div class="container" id="b1"onclick="abc(id)" >
+            
+        </div>
+        <div class="container" id="b2"onclick="abc(id)">
+            
+        </div> <br>
+        <div class="container" id="b3"onclick="abc(id)">
+            
+        </div>
+        <div class="container" id="b4"onclick="abc(id)">
+            
+        </div>
+        <div class="container" id="b5"onclick="abc(id)">
+           
+        </div> <br>
+        <div class="container" id="b6"onclick="abc(id)">
+            
+        </div>
+        <div class="container" id="b7"onclick="abc(id)">
+            
+        </div>
+        <div class="container" id="b8"onclick="abc(id)">
+            
+        </div>
+      
+    </div>
+    <div class="cc1">
+        <h2>player1       player2</h2>
+        <div id="p1" style="width: 40px; height: 40px;display: inline-block;border: 2px solid black;background-color: blue;"></div>
+        <div id="p2" style="width: 40px; height: 40px;display: inline-block;border: 2px solid black;background-color: red;"></div>
+    </div>
+       
+ 
+    <script src="game.js"></script>
+    
+</body>
+</html>

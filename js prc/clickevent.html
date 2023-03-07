@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Event Document</title>
+    <style>
+        .container{
+            width:100px;
+            height: 20vh;
+        }
+    </style>
+    <script>
+        function myfun(x){
+            alert("button "+x+" is called")
+        }
+        function func1(){
+            document.getElementById("defimg").src="vert2.jpg"
+        }
+         
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="darwinbox office.jpeg" width="300px" id="defimg" name="defimg" alt="Image of darwinbox!">
+        <button class="btn" id="btn1">1</button> <br>
+        <button class="btn" id="btn2" onclick="myfun(2)">2</button><br>
+        <button class="btn" id="btn3" onclick="myfun(3)">3</button><br>
+        <button class="btn" id="btn4" onclick="myfun(4)">4</button><br>
+        <button class="btn" id="btn5" onclick="myfun(5)">5</button><br>
+        <button class="btn" id="btn6" onclick="myfun(6)">6</button><br>
+        <button class="btn" id="btn7" onclick="myfun(7)">7</button><br>
+    </div>
+    <script>
+        const btnn=document.querySelector("#btn1");
+         console.log(btnn);
+         btnn.addEventListener("click",func1);
+    </script>
+</body>
+</html>
